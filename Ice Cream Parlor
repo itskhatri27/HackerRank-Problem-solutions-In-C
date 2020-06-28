@@ -1,0 +1,26 @@
+#include<stdio.h>
+
+int main()
+{
+    int t,m,n,s[10000];
+    scanf("%d",&t); //test cases
+    while(t>0)
+    {
+        scanf("%d",&m); //money avail
+        scanf("%d",&n); //flavor offered
+        for(int i=1;i<=n;i++)
+        {
+            scanf("%d",&s[i]);
+        }
+        for(int j=1;j<=(n-1);j++)
+        {
+            for(int k=j+1;k<=n;k++)
+            {
+              int sum = s[j]+s[k];
+              if(sum==m)
+              printf("%d %d\n",j,k);
+            }
+        }
+        t--;
+    }
+}
