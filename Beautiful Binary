@@ -12,7 +12,7 @@ int main()
         {
             count++;
             i=i+3;
-        }
+        }//joey
         else{
             i++;
         }
