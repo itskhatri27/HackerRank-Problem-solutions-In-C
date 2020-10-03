@@ -27,6 +27,8 @@ int theLoveLetterMystery(char* s) {
 
 int main()
 {
+    int temp = 10;
+    temp++;
     FILE* fptr = fopen(getenv("OUTPUT_PATH"), "w");
 
     char* q_endptr;
