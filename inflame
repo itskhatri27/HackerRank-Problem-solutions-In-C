@@ -1,0 +1,10 @@
+#include<stdio.h>
+#define p printf
+#define a 10
+#define b 20
+void main()
+{
+    int c;
+    c=a*b;
+    p("c=%d",c);
+}
